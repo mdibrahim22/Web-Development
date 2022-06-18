@@ -14,8 +14,8 @@
 	<section class="header">
 		<nav>
 			<a href="index.html"><img src="images/logo.png"></a>
-			<div class="nav-links">
-				<i class="fa fa-times"></i>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
 					<li><a href="">Home</a></li>
 					<li><a href="">About</a></li>
@@ -24,7 +24,7 @@
 					<li><a href="">Contact</a></li>
 				</ul>
 			</div>
-			<i class="fa fa-bars"></i>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
 		</nav>
 		<div class="text-box">
 			<h1>Study the biggest university</h1>
@@ -34,9 +34,47 @@
 			<a href="contact.html" class="hero-btn">Contact Us</a>
 		</div>
 	</section>
+	<!----course----->
+	<section class="course">
+		<h1>Our Courses</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		<div class="row">
+			<div class="course-col">
+				<h3>Graduate</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+			<div class="course-col">
+				<h3>Post Graduate</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+			<div class="course-col">
+				<h3>Doctoral</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+		</div>
+	</section>
 
-
-
-
+<!----menu js script---->
+<script>
+	var navLinks=document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right="0";
+	}
+	function hideMenu(){
+		navLinks.style.right="-300px";
+	}
+</script>
 </body>
 </html>
